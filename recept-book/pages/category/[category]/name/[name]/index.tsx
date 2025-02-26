@@ -1,7 +1,6 @@
 import { Card } from "@/components/Card";
 
 export default function Page({ data, category }: { data: { meals: any[] }, category: string }) {
-  console.log(data.meals);
 
   return (
     <div className="mt-[50px] flex flex-wrap gap-3 w-[100vw] justify-center items-center">
@@ -19,7 +18,6 @@ export async function getServerSideProps(context: any) {
   const res = await fetch(`http://localhost:9000/category/get_recept_by_filter?category=${category}&name=${name}`);
   const data = await res.json();
 
-  console.log(data);
   return { props: { data, category } };
 }
 

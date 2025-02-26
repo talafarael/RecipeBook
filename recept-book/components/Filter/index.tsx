@@ -41,7 +41,6 @@ const Filter = ({ data }: { data: IFilter }) => {
   };
 
   const useFilter = () => {
-    console.log(`Navigating to: /category/${category}/name/${value}`);
     router.push(`/category/${category}/name/${value}`);
   };
 

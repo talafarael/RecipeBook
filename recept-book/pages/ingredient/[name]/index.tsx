@@ -14,6 +14,5 @@ export async function getServerSideProps(context: any) {
   const res = await fetch(`http://localhost:9000/category/get_recipes_by_ingredient?ingredient=${name}`);
   const data = await res.json();
 
-  console.log(data);
   return { props: { data } };
 }

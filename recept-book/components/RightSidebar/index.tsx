@@ -1,4 +1,3 @@
-import { IGetOne } from "@/pages/recept/[category]/[id]";
 import { useRouter } from "next/navigation";
 import React from "react";
 

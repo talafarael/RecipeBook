@@ -1,6 +1,5 @@
 import MainPanel from "@/components/MainPanel";
 import { RightSidebar } from "@/components/RightSidebar";
-import Image from "next/image";
 
 export default function Page({ data }: { data: IMeals }) {
   return (
@@ -17,8 +16,6 @@ export async function getServerSideProps(context: any) {
   const { id } = context.params;
   const res = await fetch(`http://localhost:9000/category/get_one?id=${id}`);
   const data = await res.json();
-
-  console.log(data);
   return { props: { data } };
 }
 export interface IMeals {
