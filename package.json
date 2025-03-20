@@ -1,0 +1,21 @@
+{
+  "name": "recipebook",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/talafarael/RecipeBook.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/talafarael/RecipeBook/issues"
+  },
+  "homepage": "https://github.com/talafarael/RecipeBook#readme"
+}
